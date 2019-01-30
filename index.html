@@ -1,128 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8/">
-    <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <title>Learn Web-Dev</title>
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <div class="page-background">
-        <div class="page">
-            <header class="header">
-                <nav class="header-nav">
-                    <img
-                        src="images/menu-button.svg"
-                        class="header-menu-button"
-                    />
-                </nav>
+
+<head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133514855-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133514855-1');
+  </script>
+
+  <meta charset="utf-8/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Web-Dev LatsiC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-background">
+    <div class="page">
+      
+      <header class="header">
+        
+          <!-- <nav class="header-nav">
+                      <img
+                          src="images/menu-button.svg"
+                          class="header-menu-button"
+                      />
+                  </nav> -->
+          <div class="header-content">
+            <h1>WebDev</h1>
+            <img src="images/web.svg" class="header-logo" />
+            <h1>Latsic</h1>
+          </div>
+          
+      </header>
+      
+      <div class="nav-and-content">
+        <!-- <div class="nav-bar-container"> -->
+          <nav class="nav-bar">
+            <div class="nav-bar-content">
+              <div class="nav-bar-content-div">
+                <a class="nav-bar-item" href="#article-img-align">
+                  <img src="images/French_knot.svg" alt="Stitching icon" />
+                  <p style="text-align: center">Stitch</p>
+                </a>
+
+                <a class="nav-bar-item" href="#article-oidc">
+                  <img src="images/keys.svg" alt="OIDC Icon" />
+                  <p style="text-align: center">OAuth</p>
+                </a>
+                <a class="nav-bar-item" href="#article-talks-board">
+                  <img src="images/paperblock.svg" alt="Talks-Board Icon" />
+                  <p style="text-align: center">Board</p>
+                </a>
+                <a class="nav-bar-item" href="#article-more">
+                  <img src="images/More.svg" alt="More Icon" />
+                  <p style="text-align: center">Other</p>
+                </a>
+              </div>
+              <div class="nav-bar-content-div">
+                <a class="nav-bar-item" href="#article-about">
+                  <img src="images/About.svg" alt="About Icon" />
+                  <p style="text-align: center">About</p>
+                </a>
+                <a class="nav-bar-item" href="https://github.com/latsic/">
+                  <img src="images/github.svg" alt="Github Icon" />
+                  <p style="text-align: center">Github</p>
+                </a>
+              </div>
+
+            </div>
+          </nav>
+        <!-- </div> -->
+        <div class="articles">
+          <article class="article-std" id="article-img-align">
+            <header>
+              <div class="article-title">
+                <h3>
+                  Image stitching
+                </h3>
                 <div>
-                    <img
-                        src="images/web.svg"
-                        class="header-logo"
-                    />
-                    <h1>Learn WebDev</h1>
+                  <h5><a href="https://latsic.com/imgalign">App</a> | <a href="https://github.com/latsic/imgalign">Github</a></h5>
                 </div>
+              </div>
+              <hr>
             </header>
-            <div class="nav-and-content">
-                <nav class="nav-bar">
-                    <div class="nav-bar-content">
-					
-						<a class="nav-bar-item" href="#article-projects">
-                            <img src="images/projects.svg"  alt="Projects icon"/>
-                            <p>Projects</p>
-                        </a> 
-					
-                        <a class="nav-bar-item" href="#article-git-1">
-                            <img src="images/git.svg"  alt="GIT IMAGE"/>
-                            <p>Git</p>
-                        </a>            
-                        <a class="nav-bar-item" href="#article-html-1">
-                            <img src="images/html.svg"/>
-                            <p>Html</p>
-                        </a>
-                        <a class="nav-bar-item" href=#article-css-1>
-                            <img src="images/css.svg"/>
-                            <p>Css</p>
-                        </a>
-                        <a class="nav-bar-item" href="#">
-                            <img src="images/shape1.svg"/>
-                            <p>Shape1</p>
-                        </a>
-                        <a class="nav-bar-item" href="#">
-                            <img src="images/shape2.svg"/>
-                            <p>Shape2</p>
-                        </a>
-                        <a class="nav-bar-item" href="#">
-                            <img src="images/shape3.svg"/>
-                            <p>Shape3</p>
-                        </a>
-                        <a class="nav-bar-item" href="#">
-                            <img src="images/shape4.svg"/>
-                            <p>Shape4</p>
-                        </a>
-                        <a class="nav-bar-item" href="#">
-                            <img src="images/shape5.svg"/>
-                            <p>Shape5</p>
-                        </a>
-                    </div>
-                </nav>
-                <div class="articles">
-					<article class="article-std" id="article-projects">
-						<header>
-							<h2>Projects</h2>
-                        </header>
-						<section class="projects-links-section">
-							<ul>
-								<li>
-									<a class="project-links" href="/imgalign/index.html">Online stitcher / Panoramas / Align images</a>
-								</li>
-								<li>
-									<a class="project-links" href="/oidc-client/index.html">OIDC Client</a>
-								</li>
-								<li>
-									<a class="project-links" href="/page_editor/main.html">A Very simple page editor</a>
-								</li>
-								<li>
-									<a class="project-links" href="/tboard/index.html">A board to propose talks</a>
-                                </li>
-                                <li>
-                                    <a class="project-links" href="../bulma_sandbox/dist/bulma_sandbox.html">A site showcasing some components of the bulma css framework.</a>
-                                </li>
-							</ul>
-						</section>
-					</article>
-                    <article class="article-std" id="article-html-1">
-                        <header>
-                            <h2>HTML Article 1</h2>
-                        </header>
-                        <p>Some Random HTML Article 1</p>
-                    </article>
-                    <article class="article-std" id="article-html-2">
-                        <header>
-                            <h2>HTML Article 2</h2>
-                        </header>
-                        <p>Some Random HTML Article 2</p>
-                    </article>
-                    <article class="article-std" id="article-git-1">
-                        <header>
-                            <h2>Git Article 1</h2>
-                        </header>
-                        <p>Some Random Git Article 1</p>
-                    </article>
-                    <article class="article-std" id="article-css-1">
-                        <header>
-                            <h2>CSS Article 1</h2>
-                        </header>
-                        <p>Some Random CSS Article 1</p>
-                    </article>
+            <div
+              class="article-structure"
+              >
+              <section class="article-image">
+                <img
+                  src="images/stitched.png"
+                  alt="Stitching Example"
+                >
+              </section>
+              <section class="article-text">
+                
+                <p class="article-p">
+                  A client-side only <strong>webapplication</strong> to <strong>join, stitch or align</strong> overlapping images.
+                  It can be used to created <strong>panoramas</strong> or to <strong>align images</strong> (for example forms which have not been scanned properly).
+                </p>
+                
+                <p class="article-p">
+                  The main technologies used are <a href="https://vuejs.org/"><strong>Vue</strong></a> and <a href="https://opencv.org/"><strong>OpenCV</strong></a>.
+                </p>
+
+                <p class="article-p">
+                  <strong>Features:</strong> Surface projection, feature detection, feature matching, bundle adjustement, wave correction, color transfer, seam detection and multiband blending.
+                </p>
+
+                <p class="article-p">
+                  The core algorithms are taken from OpenCV (modules
+                  <a href="https://github.com/opencv/opencv/tree/master/modules/features2d">Feature2D</a> and
+                  <a href="https://github.com/opencv/opencv/tree/master/modules/stitching">Stiching</a> mainly)
+                  and have been adjusted where needed. A customized version of OpenCV
+                  has than been compiled to <strong>wasm</strong>. To ensure a non blocking UI, all OpenCV related function run via a <strong>webworker</strong>.
+                </p>
+                
+                <p class="article-p">
+                  <strong>Pros and cons:</strong> As image stiching can be quite <strong>memory and cpu intensive</strong>, there are some limitations
+                  on the amount or sizes of images which can be stitched together, especially on mobile devices.
+                  On the plus side, basic stitching functionality is available on almost any
+                  devices which can run a browser. There is no need to download a professional stitching software.
+                  The application is <strong>fully functional offline</strong> as well.
+                </p>
+              </section>
+            </div>
+          </article>
+          <article class="article-std" id="article-oidc">
+            <header>
+              <div class="article-title">
+                <h3>
+                  Identity management
+                </h3>
+                <div>
+                  <h5><a href="https://latsic.com/oidc-client">App</a> | <a href="https://github.com/latsic/vue_oidc_client">Github</a></h5>
                 </div>
-            </div>    
-            <footer class="footer-std">
-                <p>&copy; Some Footer Text</p>
-            </footer>
+              </div>
+              <hr>
+            </header>
+            <div
+              class="article-structure"
+            >
+              <section class="article-image">
+                <img
+                  src="images/Oauth_logo.svg"
+                  alt="OAuth image"
+                >
+              </section>
+                
+              <section class="article-text">
+                
+                <p>
+                  A <a href="https://vuejs.org/">Vue</a> SPA client using 
+                  <a href="https://de.wikipedia.org/wiki/OpenID_Connect">OpenId Connect</a> to get access
+                  to <a href="./oidc-client/credentials">Identity</a> (authentication) and 
+                  <a href="./oidc-client/idapi1">API resources"</a> (authorization). It uses
+                  the <a href="https://github.com/IdentityModel/oidc-client-js">oidc-client</a>
+                  javascript library.
+                </p>
+                <p>
+                  One backend this app talks to is an <a :href="idServerUrl">authorization server</a> implemented with <a href="https://en.wikipedia.org/wiki/ASP.NET_Core">
+                  Asp.net Core</a> and <a href="http://docs.identityserver.io"><strong>Identity Server 4</strong></a>.
+                </p>
+          
+                <p>
+                  The technologies mentioned above enable, among others, features like 
+                  <a href="https://en.wikipedia.org/wiki/Single_sign-on">Single Sign-On (SSO)</a>, 
+                  login with external providers and <a href="https://en.wikipedia.org/wiki/Access_token">
+                  Access Control for APIs</a>.
+                </p>
+          
+                <p>
+                  The purpose of this app is to learn about the involved technologies. There is also
+                  a <a :href="idApiSwaggerUrl">webapi</a> running which provides endpoints to test
+                  access to api resources. These endpoints require various kinds of
+                  <a href="https://en.wikipedia.org/wiki/Claims-based_identity">authorization</a>. For
+                  example the age of a user or the role of a user. If you are logged in, you can try it
+                  out <a href="./oidc-client/idapi1">here</a>.
+                </p>
+                <img
+                  src="images/OpenID_logo.svg"
+                  alt="OpenID image"
+                >
+              </section>
+            </div>
+          </article>
+
+          <article class="article-std" id="article-talks-board">
+            <header>
+              <div class="article-title">
+                <h3>
+                  Talks board
+                </h3>
+                <div>
+                  <h5><a href="/tboard/index.html">App</a> | <a href="https://github.com/latsic/talks_board">Github</a></h5>
+                </div>
+              </div>
+              <hr>
+            </header>
+            <div
+              class="article-structure"
+            >
+              <section class="article-image">
+                <img
+                  src="images/TalksBoard.JPG"
+                  alt="TalksBoard image"
+                >
+              </section>
+                
+              <section class="article-text">
+                
+                <p>
+                    A simple board where talks can be proposed.
+                    The main technology feature is <a href="https://en.wikipedia.org/wiki/Push_technology#Long_polling">long polling</a>.
+                    Built from an excersise from the book <a href="https://eloquentjavascript.net/"><strong>Eloquent javascript</strong></a>.
+                    On the backend a <strong>Node.js</strong> server is running.
+                </p>
+                  
+              </section>
+            </div>
+          </article>
+          <article class="article-std" id="article-more">
+            <header>
+              <div class="article-title">
+                <h3>
+                  Page editor
+                </h3>
+                <div>
+                  <h5><a href="/page_editor/main.html">App</a> | <a href="https://github.com/latsic/page_editor">Github</a></h5>
+                </div>
+              </div>
+              <hr>
+            </header>
+            <div
+              class="article-structure"
+            >
+              
+              <section class="article-text">
+                
+                <p>
+                    A very basic page editor. The user can change the webpage by editing html, css or javascript through text area html elements.
+                    The backend is implmented using node.js.
+                </p>
+                  
+              </section>
+            </div>
+          </article>
+
+          <article class="article-std">
+            <header>
+              <div class="article-title">
+                <h3>
+                  Bulma Sandbox
+                </h3>
+                <div>
+                  <h5><a href="../bulma_sandbox/dist/bulma_sandbox.html">App</a> | <a href="https://github.com/latsic/bulma_sandbox">Github</a></h5>
+                </div>
+              </div>
+              <hr>
+            </header>
+            <div
+              class="article-structure"
+            >
+              
+              <section class="article-text">
+                
+                <p>
+                  A static website showcasing some components of the <a href="https://bulma.io/">Bulma</a> css framework.
+                </p>
+                  
+              </section>
+            </div>
+          </article>
+
+          <article class="article-std" id="article-about">
+            <header>
+              <div class="article-title">
+                <h3>
+                  About
+                </h3>
+                <div>
+                  <h5><a href="mailto:latsic@quantentunnel.de">Email</a></h5>
+                </div>
+              </div>
+              <hr>
+            </header>
+            <div
+              class="article-structure"
+            >
+              
+              <section class="article-text">
+                
+                <p>
+                  A page with Latsic's webdev experiments.
+                </p>
+                  
+              </section>
+            </div>
+          </article>
         </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
