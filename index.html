@@ -91,13 +91,29 @@
             <div
               class="article-structure"
               >
-              <section class="article-image">
-                <img
-                  src="images/stitched.png"
-                  alt="Stitching Example"
-                >
-              </section>
-              <section class="article-text">
+              <div
+                style="display: flex; flex-direction: column; flex: 1"
+              >
+                <section class="article-image">
+                  <img
+                    src="images/SideBySide_small.jpg"
+                    alt="Stitching SideBySide image"
+                  >
+                </section>
+                <section class="article-image">
+                  <img
+                    src="images/stitched_noseam_noprojection_small.png"
+                    alt="Stitching NoWarp image"
+                  >
+                </section>
+                <section class="article-image">
+                  <img
+                    src="images/stitched_graphcut_noblend_small.png"
+                    alt="Stitching NoWarp image"
+                  >
+                </section>
+              </div>
+              <section class="article-text" >
                 
                 <p class="article-p">
                   A client-side only <strong>webapplication</strong> to <strong>join, stitch or align</strong> overlapping images.
@@ -127,7 +143,26 @@
                   devices which can run a browser. There is no need to download a professional stitching software.
                   The application is <strong>fully functional offline</strong> as well.
                 </p>
+
+                <div
+                  style="display: flex; flex-direction: column; flex: 1"
+                >
+                  <section class="article-image">
+                    <img
+                      src="images/stitched_spherical_small.png"
+                      alt="Stitching Spherical"
+                    >
+                  </section>
+                  <section class="article-image">
+                    <img
+                      src="images/stitched_final_small.jpg"
+                      alt="Stitching Final"
+                    >
+                  </section>
+                </div>
+
               </section>
+              
             </div>
           </article>
           <article class="article-std" id="article-oidc">
@@ -158,7 +193,7 @@
                   A <a href="https://vuejs.org/">Vue</a> SPA client using 
                   <a href="https://de.wikipedia.org/wiki/OpenID_Connect">OpenId Connect</a> to get access
                   to <a href="./oidc-client/credentials">Identity</a> (authentication) and 
-                  <a href="./oidc-client/idapi1">API resources"</a> (authorization). It uses
+                  <a href="./oidc-client/idapi1">API resources</a> (authorization). It uses
                   the <a href="https://github.com/IdentityModel/oidc-client-js">oidc-client</a>
                   javascript library.
                 </p>
@@ -176,11 +211,10 @@
           
                 <p>
                   The purpose of this app is to learn about the involved technologies. There is also
-                  a <a :href="idApiSwaggerUrl">webapi</a> running which provides endpoints to test
+                  a <a href="idApiSwaggerUrl">webapi</a> running which provides endpoints to test
                   access to api resources. These endpoints require various kinds of
                   <a href="https://en.wikipedia.org/wiki/Claims-based_identity">authorization</a>. For
-                  example the age of a user or the role of a user. If you are logged in, you can try it
-                  out <a href="./oidc-client/idapi1">here</a>.
+                  example the age of a user or the role of a user.
                 </p>
                 <div class="article-image">
                 <img
@@ -246,7 +280,7 @@
                 
                 <p>
                     A very basic page editor. The user can change the webpage by editing html, css or javascript through text area html elements.
-                    The backend is implemented using node.js.
+                    The backend is implemented using Node.js.
                 </p>
                   
               </section>
