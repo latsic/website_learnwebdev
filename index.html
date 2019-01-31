@@ -23,58 +23,50 @@
     <div class="page">
       
       <header class="header">
-        
-          <!-- <nav class="header-nav">
-                      <img
-                          src="images/menu-button.svg"
-                          class="header-menu-button"
-                      />
-                  </nav> -->
-          <div class="header-content">
-            <h1>WebDev</h1>
-            <img src="images/web.svg" class="header-logo" />
-            <h1>Latsic</h1>
-          </div>
-          
+        <div class="header-content">
+          <h2>WebDev</h2>
+          <img src="images/web.svg" class="header-logo" />
+          <h2>Latsic</h2>
+        </div>
       </header>
       
       <div class="nav-and-content">
-        <!-- <div class="nav-bar-container"> -->
-          <nav class="nav-bar">
-            <div class="nav-bar-content">
-              <div class="nav-bar-content-div">
-                <a class="nav-bar-item" href="#article-img-align">
-                  <img src="images/French_knot.svg" alt="Stitching icon" />
-                  <p style="text-align: center">Stitch</p>
-                </a>
+        
+        <nav class="nav-bar">
+          <div class="nav-bar-content">
+            <div class="nav-bar-content-div">
+              <a class="nav-bar-item" href="#article-img-align">
+                <img src="images/stitch-blue.svg" alt="Stitching icon" />
+                <p style="text-align: center">Stitch</p>
+              </a>
 
-                <a class="nav-bar-item" href="#article-oidc">
-                  <img src="images/keys.svg" alt="OIDC Icon" />
-                  <p style="text-align: center">OAuth</p>
-                </a>
-                <a class="nav-bar-item" href="#article-talks-board">
-                  <img src="images/paperblock.svg" alt="Talks-Board Icon" />
-                  <p style="text-align: center">Board</p>
-                </a>
-                <a class="nav-bar-item" href="#article-more">
-                  <img src="images/More.svg" alt="More Icon" />
-                  <p style="text-align: center">Other</p>
-                </a>
-              </div>
-              <div class="nav-bar-content-div">
-                <a class="nav-bar-item" href="#article-about">
-                  <img src="images/About.svg" alt="About Icon" />
-                  <p style="text-align: center">About</p>
-                </a>
-                <a class="nav-bar-item" href="https://github.com/latsic/">
-                  <img src="images/github.svg" alt="Github Icon" />
-                  <p style="text-align: center">Github</p>
-                </a>
-              </div>
-
+              <a class="nav-bar-item" href="#article-oidc">
+                <img src="images/key-blue.svg" alt="OIDC Icon" />
+                <p style="text-align: center">OAuth</p>
+              </a>
+              <a class="nav-bar-item" href="#article-talks-board">
+                <img src="images/paper-blue.svg" alt="Talks-Board Icon" />
+                <p style="text-align: center">Board</p>
+              </a>
+              <a class="nav-bar-item" href="#article-more">
+                <img src="images/gift-blue.svg" alt="More Icon" />
+                <p style="text-align: center">Other</p>
+              </a>
             </div>
-          </nav>
-        <!-- </div> -->
+            <div class="nav-bar-content-div">
+              <a class="nav-bar-item" href="#article-about">
+                <img src="images/contact-blue.svg" alt="About Icon" />
+                <p style="text-align: center">About</p>
+              </a>
+              <a class="nav-bar-item" href="https://github.com/latsic/">
+                <img src="images/github-blue.svg" alt="Github Icon" />
+                <p style="text-align: center">Github</p>
+              </a>
+            </div>
+
+          </div>
+        </nav>
+        
         <div class="articles">
           <article class="article-std" id="article-img-align">
             <header>
@@ -86,21 +78,25 @@
                   <h5><a href="https://latsic.com/imgalign">App</a> | <a href="https://github.com/latsic/imgalign">Github</a></h5>
                 </div>
               </div>
-              <hr>
+              <div class="hr-title" />
             </header>
             <div
               class="article-structure"
               >
               <div
-                style="display: flex; flex-direction: column; flex: 1"
+                style="display: flex; flex-direction: column; flex: 1;"
               >
                 <section class="article-image">
+                  <figcaption>Feature matching/detection</figcaption>
                   <img
                     src="images/SideBySide_small.jpg"
                     alt="Stitching SideBySide image"
                   >
+                  
                 </section>
+                
                 <section class="article-image">
+                  <figcaption>Alignement - homographic perspective transform</figcaption>
                   <img
                     src="images/stitched_noseam_noprojection_small.png"
                     alt="Stitching NoWarp image"
@@ -111,6 +107,7 @@
                     src="images/stitched_graphcut_noblend_small.png"
                     alt="Stitching NoWarp image"
                   >
+                  <figcaption style="text-align: center;">Seam finding - graphcut</figcaption>
                 </section>
               </div>
               <section class="article-text" >
@@ -145,19 +142,21 @@
                 </p>
 
                 <div
-                  style="display: flex; flex-direction: column; flex: 1"
+                  style="display: flex; flex-direction: column; flex: 1; justify-content: center; margin-top: 2rem"
                 >
-                  <section class="article-image">
+                  <section class="article-image article-image-right">
                     <img
                       src="images/stitched_spherical_small.png"
                       alt="Stitching Spherical"
                     >
+                    <figcaption class="article-figcaption-right">Spherical surface projection</figcaption>
                   </section>
-                  <section class="article-image">
+                  <section class="article-image article-image-right">
                     <img
                       src="images/stitched_final_small.jpg"
                       alt="Stitching Final"
                     >
+                    <figcaption class="article-figcaption-right">Rectify - affine perspective transform</figcaption>
                   </section>
                 </div>
 
@@ -175,17 +174,12 @@
                   <h5><a href="https://latsic.com/oidc-client">App</a> | <a href="https://github.com/latsic/vue_oidc_client">Github</a></h5>
                 </div>
               </div>
-              <hr>
+              <div class="hr-title" />
             </header>
             <div
               class="article-structure"
             >
-              <section class="article-image">
-                <img
-                  src="images/Oauth_logo.svg"
-                  alt="OAuth image"
-                >
-              </section>
+              
                 
               <section class="article-text">
                 
@@ -216,12 +210,18 @@
                   <a href="https://en.wikipedia.org/wiki/Claims-based_identity">authorization</a>. For
                   example the age of a user or the role of a user.
                 </p>
-                <div class="article-image">
+                <div class="article-image" style="padding-top: 2rem">
                 <img
                   src="images/OpenID_logo.svg"
                   alt="OpenID image"
                 >
                 </div>
+              </section>
+              <section class="article-image article-image-right">
+                <img
+                  src="images/Oauth_logo.svg"
+                  alt="OAuth image"
+                >
               </section>
             </div>
           </article>
@@ -236,7 +236,7 @@
                   <h5><a href="/tboard/index.html">App</a> | <a href="https://github.com/latsic/talks_board">Github</a></h5>
                 </div>
               </div>
-              <hr>
+              <div class="hr-title" />
             </header>
             <div
               class="article-structure"
@@ -270,7 +270,7 @@
                   <h5><a href="/page_editor/main.html">App</a> | <a href="https://github.com/latsic/page_editor">Github</a></h5>
                 </div>
               </div>
-              <hr>
+              <div class="hr-title" />
             </header>
             <div
               class="article-structure"
@@ -294,10 +294,10 @@
                   Bulma Sandbox
                 </h3>
                 <div>
-                  <h5><a href="../bulma_sandbox/dist/bulma_sandbox.html">App</a> | <a href="https://github.com/latsic/bulma_sandbox">Github</a></h5>
+                  <h5><a href="../bulma_sandbox/dist/bulma_sandbox.html">Site</a> | <a href="https://github.com/latsic/bulma_sandbox">Github</a></h5>
                 </div>
               </div>
-              <hr>
+              <div class="hr-title" />
             </header>
             <div
               class="article-structure"
@@ -323,7 +323,7 @@
                   <h5><a href="mailto:latsic@quantentunnel.de">Email</a></h5>
                 </div>
               </div>
-              <hr>
+              <div class="hr-title" />
             </header>
             <div
               class="article-structure"
