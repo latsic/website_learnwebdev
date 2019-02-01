@@ -86,7 +86,7 @@ html {
 }
 .nav-and-content {
   position: absolute;
-  top: 32px;
+  top: 33px;
   height: 40px;
 }
 .nav-bar {
@@ -260,7 +260,6 @@ html {
   .nav-and-content {
     display: flex;
     flex-direction: row;
-    top: 32px;
     min-height: 100vh;
     max-height: 100vh;
   }
@@ -297,7 +296,7 @@ html {
     text-align: center;
   }
   .target-pos > article {
-    padding-top: 32px;
-    margin-top: -32px;
+    padding-top: 33px;
+    margin-top: -33px;
   }
 }
