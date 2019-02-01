@@ -220,6 +220,11 @@ html {
   margin-bottom: 0.3rem;
 }
 
+/* .target-pos {
+  padding-top: 80px;
+  margin-top: -80px;
+} */
+
 /* Mobile Systems */
 @media only screen and (max-width: 500px) {
   html {
