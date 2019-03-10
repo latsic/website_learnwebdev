@@ -1,0 +1,20 @@
+
+header > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fixed-header-align {
+  display: block;
+  padding-top: 33px;
+  margin-top: -33px;
+}
+.fixed-header-offset {
+  display: block;
+  margin-top: 33px;
+}
+
+.images-panel {
+  width: 90%; 
+  margin: 0 auto;
+}
