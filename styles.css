@@ -158,6 +158,15 @@ html {
   align-items: flex-start;
   margin: 1rem;
 }
+
+.article-image-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .article-image {
   display: block;
   margin: auto;
@@ -236,6 +245,10 @@ html {
   .article-image > figcaption.article-figcaption-right {
     text-align: center;
   }
+  .article-image-panel {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* Desktop Systems */
@@ -299,5 +312,9 @@ html {
   .fixed-header-align {
     padding-top: 33px;
     margin-top: -33px;
+  }
+  .article-image-panel {
+    margin: 0;
+    padding: 0;
   }
 }
